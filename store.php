@@ -30,10 +30,10 @@ No change needed under
 
 /***
  * store.php - upload a file in this directory
- * version :1.6.1 - 2015/03/16 - makefu@github   
+ * version :1.7.0 - 2015/03/16 - makefu@github   
  * 
  * see : 
- *	http://tiddlywiki.bidi.info/#UploadPlugin for usage
+*   https://excogitation.de/wiki/#Tiddlywiki%20saving%20with%20php%20script for usage
  *	http://www.php.net/manual/en/features.file-upload.php 
  *		for details on uploading files
  * usage : 
@@ -45,9 +45,9 @@ No change needed under
  * each external javascript file included by download.php is change by a reference (src=...)
  *
  * Revision history
- * V1.6.1 - 2015/03/16 
+ * V1.7.0 - 2015/03/16 
  * Security: - add override_filename to ignore the given filename
- *           -  
+ *           - add override_savedir and override_backupdir
  * V1.6.1 - 2007/08/01
  * Enhancement: Add javascript folding
  * V1.6.0 - 2007/05/17
@@ -103,13 +103,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 	</head>
 	<body>
 		<p>
-		<p>store.php V 1.6.1
+		<p>store.php V 1.7.0
 		<p>BidiX@BidiX.info
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p align="center">This page is designed to upload a <a href="http://www.tiddlywiki.com/">TiddlyWiki<a>.</p>
-		<p align="center">for details see : <a href="http://TiddlyWiki.bidix.info/#HowToUpload">TiddlyWiki.bidix.info/#HowToUpload<a>.</p>	
+		<p align="center">for details see : <a href="https://excogitation.de/wiki/#Tiddlywiki%20saving%20with%20php%20script">https://excogitation.de/ wiki<a>.</p>	
 	</body>
 </html>
 <?php
